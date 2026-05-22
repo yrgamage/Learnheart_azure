@@ -1,0 +1,188 @@
+{
+  "questions": [
+    {
+      "question": "What is LearnHeart?",
+      "answer": "LearnHeart is an educational platform connecting rural schools in Sri Lanka with volunteers and organizations for seminar requests and collaborations."
+    },
+    {
+      "question": "How does LearnHeart help rural schools?",
+      "answer": "LearnHeart allows rural schools to request seminars and connect with volunteers and organizations to improve educational opportunities."
+    },
+    {
+      "question": "Who can use LearnHeart?",
+      "answer": "Schools, volunteers, and organizations can use LearnHeart to collaborate and support educational initiatives."
+    },
+    {
+      "question": "How do I register on LearnHeart?",
+      "answer": "You can register as a school, volunteer, or organization by signing up on the LearnHeart website."
+    },
+    {
+      "question": "What types of seminars can be requested?",
+      "answer": "Schools can request academic, career guidance, soft skills, and technology-related seminars."
+    },
+    {
+      "question": "How do volunteers get matched with seminar requests?",
+      "answer": "Volunteers can browse seminar requests and apply based on their expertise and availability."
+    },
+    {
+      "question": "Is LearnHeart free to use?",
+      "answer": "Yes, LearnHeart is a free platform designed to support educational development in rural areas."
+    },
+    {
+      "question": "Can organizations sponsor seminars?",
+      "answer": "Yes, organizations can sponsor and organize seminars to support schools through LearnHeart."
+    },
+    {
+      "question": "How does LearnHeart ensure the quality of seminars?",
+      "answer": "LearnHeart verifies volunteers and organizations, ensuring high-quality and impactful seminars."
+    },
+    {
+      "question": "Can volunteers earn certificates for their contributions?",
+      "answer": "Not yet, volunteers dosen't receive certificates for their participation in educational seminars."
+    },
+    {
+      "question": "How can schools track their seminar requests?",
+      "answer": "Schools can log in to LearnHeart and track the status of their seminar requests in real time."
+    },
+    {
+      "question": "What are the benefits of joining LearnHeart as a volunteer?",
+      "answer": "Volunteers gain experience, contribute to education, and receive certificates for their efforts."
+    },
+    {
+      "question": "Can international volunteers participate?",
+      "answer": "Currently, LearnHeart focuses on Sri Lanka, but future updates may include international participation."
+    },
+    {
+      "question": "How do organizations collaborate with LearnHeart?",
+      "answer": "Organizations can partner with LearnHeart to sponsor seminars, provide resources, and support schools."
+    },
+    {
+      "question": "What is the skill verification system in LearnHeart?",
+      "answer": "LearnHeart uses an ML-based skill verification system to assess volunteer skills and generate a score."
+    },
+    {
+      "question": "How does the authentication system work?",
+      "answer": "LearnHeart uses a secure MERN stack-based authentication system for users to log in and manage their profiles."
+    },
+    {
+      "question": "What is LearnHeart\u00e2\u20ac\u2122s mission?",
+      "answer": "LearnHeart aims to bridge the educational gap in rural Sri Lankan schools by connecting them with volunteers and organizations."
+    },
+    {
+      "question": "Can schools request multiple seminars?",
+      "answer": "Yes, schools can request multiple seminars based on their educational needs."
+    },
+    {
+      "question": "How do I find seminar opportunities as a volunteer?",
+      "answer": "Volunteers can browse available seminar requests on LearnHeart and apply based on their expertise."
+    },
+    {
+      "question": "What types of volunteers does LearnHeart need?",
+      "answer": "LearnHeart welcomes educators, professionals, and students who can contribute to various educational topics."
+    },
+    {
+      "question": "How long does it take for a seminar request to be approved?",
+      "answer": "Approval times vary, but schools can track request statuses in real time."
+    },
+    {
+      "question": "Can schools provide feedback on seminars?",
+      "answer": "Yes, schools can rate and provide feedback on completed seminars to improve future sessions."
+    },
+    {
+      "question": "How do organizations benefit from LearnHeart?",
+      "answer": "Organizations can contribute to education, enhance CSR efforts, and collaborate with schools and volunteers."
+    },
+    {
+      "question": "Is LearnHeart available on mobile?",
+      "answer": "A mobile-friendly version is available, with plans for a dedicated mobile app in the future."
+    },
+    {
+      "question": "How do I contact LearnHeart support?",
+      "answer": "Users can contact LearnHeart support through the website\u00e2\u20ac\u2122s contact page or email."
+    },
+    {
+      "question": "What security measures are in place for user data?",
+      "answer": "LearnHeart uses encrypted authentication and secure servers to protect user data."
+    },
+    {
+      "question": "Can retired professionals join as volunteers?",
+      "answer": "Yes, retired professionals are encouraged to share their expertise with students."
+    },
+    {
+      "question": "What subjects can volunteers teach?",
+      "answer": "Volunteers can teach subjects like mathematics, science, IT, English, career guidance, and more."
+    },
+    {
+      "question": "How can donors support LearnHeart?",
+      "answer": "Donors can contribute funds, sponsor seminars, or provide educational resources through LearnHeart."
+    },
+    {
+      "question": "How does LearnHeart align with UN SDG 4?",
+      "answer": "LearnHeart promotes quality education and lifelong learning opportunities, aligning with UN Sustainable Development Goal 4."
+    },
+    {
+      "question": "What is the impact of early childhood education?",
+      "answer": "Early education builds foundational skills, improves cognitive development, and enhances future learning outcomes."
+    },
+    {
+      "question": "How can rural teachers enhance their skills?",
+      "answer": "Teachers can participate in training programs, online courses, and professional development workshops."
+    },
+    {
+      "question": "How does education improve gender equality?",
+      "answer": "Education empowers women and girls, leading to better economic opportunities, improved health, and greater societal equality."
+    },
+    {
+      "question": "How can digital learning support rural education?",
+      "answer": "Digital learning provides access to online resources, remote teaching, and interactive tools to enhance education in rural areas."
+    },
+    {
+      "question": "Tell  me about you",
+      "answer": "I'm the LearnHeart Assistant, here to help you with anything related to the LearnHeart project! \ud83c\udf93 I'm designed to answer your questions, guide you through the platform, and assist with any details you need about our mission to bridge the educational gap in rural Sri Lanka. \ud83c\udf0d Feel free to ask about our features, development progress, or anything else you\u2019d like to know! \ud83d\ude0a"
+    },
+    {
+      "question": "What are the things can you do",
+      "answer": "I'm the LearnHeart Assistant, here to help you with anything related to the LearnHeart project! \ud83c\udf93 I'm designed to answer your questions, guide you through the platform, and assist with any details you need about our mission to bridge the educational gap in rural Sri Lanka. \ud83c\udf0d Feel free to ask about our features, development progress, or anything else you\u2019d like to know! \ud83d\ude0a"
+    },
+    {
+      "question": "Who was developed this platform",
+      "answer": "LearnHeart was developed by Team CodeNova, a group of students from the Informatics Institute of Technology (IIT) in Sri Lanka."
+    },
+    {
+      "question": "Hi",
+      "answer": "Hi \ud83d\udc4b, welcome to the LearnHeart Assistant!\ud83e\udd16 Ask any question you want to know about this project."
+    },
+    {
+      "question": "hi",
+      "answer": "Hi \ud83d\udc4b, welcome to the LearnHeart Assistant!\ud83e\udd16 Ask any question you want to know about this project."
+    },
+    {
+      "question": "hello",
+      "answer": "Hi \ud83d\udc4b, welcome to the LearnHeart Assistant!\ud83e\udd16 Ask any question you want to know about this project."
+    },
+    {
+      "question": "Good morning",
+      "answer": "Hi \ud83d\udc4b, welcome to the LearnHeart Assistant!\ud83e\udd16 Ask any question you want to know about this project."
+    },
+    {
+      "question": "Quit",
+      "answer": "Thanks for using LearnHeart Assistant. Have a great day! \ud83d\ude4c"
+    },
+    {
+      "question": "Good bye",
+      "answer": "Thanks for using LearnHeart Assistant. Have a great day! \ud83d\ude4c"
+    },
+    {
+      "question": "Bye",
+      "answer": "Thanks for using LearnHeart Assistant. Have a great day! \ud83d\ude4c"
+    },
+    {
+      "question": "Thanks",
+      "answer": "You're welcome! \ud83d\ude0a"
+    },
+    {
+      "question": "Welcome",
+      "answer": "\ud83d\ude0a"
+    }
+  ]
+}
