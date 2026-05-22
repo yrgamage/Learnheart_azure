@@ -40,11 +40,7 @@ import ResourceBank from './pages/resourceBankPages/ResourceBank.jsx';
 import AddResource from './pages/resourceBankPages/AddResource.jsx';
 
 const { VITE_CLERK_PUBLISHABLE_KEY } = import.meta.env;
-const PUBLISHABLE_KEY = VITE_CLERK_PUBLISHABLE_KEY;
-
-if (!PUBLISHABLE_KEY) {
-  throw new Error("Missing Publishable Key")
-}
+const PUBLISHABLE_KEY = VITE_CLERK_PUBLISHABLE_KEY?.trim();
 
 const router = createBrowserRouter([
   { path: "/", element: <App />, },
@@ -77,10 +73,22 @@ const router = createBrowserRouter([
 ]);
 
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
-      <RouterProvider router={router} />
-    </ClerkProvider>
-  </StrictMode>
-)
+const root = document.getElementById('root');
+
+if (!PUBLISHABLE_KEY) {
+  console.error('Missing Clerk publishable key. Set VITE_CLERK_PUBLISHABLE_KEY in frontend/.env and restart Vite.');
+  root.innerHTML = `
+    <div style="font-family: Arial, sans-serif; padding: 24px;">
+      <h1>Missing Clerk publishable key</h1>
+      <p>Set <code>VITE_CLERK_PUBLISHABLE_KEY</code> in <code>frontend/.env</code> and restart the frontend dev server.</p>
+    </div>
+  `;
+} else {
+  createRoot(root).render(
+    <StrictMode>
+      <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+        <RouterProvider router={router} />
+      </ClerkProvider>
+    </StrictMode>
+  );
+}
