@@ -49,7 +49,7 @@ const PastEventForm = ({ onClose }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3001/api/past-events', {
+            const response = await axios.post('/api/past-events', {
                 ...formData,
                 organizationId: user.id
             });

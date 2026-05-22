@@ -20,7 +20,7 @@ const OrgDashboard = () => {
   useEffect(() => {
     const fetchOrganizations = async () => {
         try {
-            const response = await axios.get("http://localhost:3001/api/organizations");
+            const response = await axios.get("/api/organizations");
             setOrganizations(response.data);
         } catch (error) {
             console.error("Error fetching organizations:", error);

@@ -32,7 +32,7 @@ const PastEventList = ({ organizationId, onClose }) => {
 
     const fetchEvents = async () => {
         try {
-            const response = await axios.get(`http://localhost:3001/api/past-events/organization/${organizationId}`);
+            const response = await axios.get(`/api/past-events/organization/${organizationId}`);
             setEvents(response.data);
         } catch (error) {
             console.error('Error fetching events:', error);
@@ -46,7 +46,7 @@ const PastEventList = ({ organizationId, onClose }) => {
 
     const handleDeleteConfirm = async () => {
         try {
-            await axios.delete(`http://localhost:3001/api/past-events/${selectedEvent._id}`);
+            await axios.delete(`/api/past-events/${selectedEvent._id}`);
             fetchEvents();
             setIsDeleteDialogOpen(false);
         } catch (error) {
@@ -56,7 +56,7 @@ const PastEventList = ({ organizationId, onClose }) => {
 
     const handleReviewSubmit = async () => {
         try {
-            await axios.post(`http://localhost:3001/api/past-events/${selectedEvent._id}/reviews`, newReview);
+            await axios.post(`/api/past-events/${selectedEvent._id}/reviews`, newReview);
             fetchEvents();
             setIsReviewDialogOpen(false);
             setNewReview({ rating: 0, comment: '' });

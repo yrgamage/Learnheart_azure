@@ -19,7 +19,7 @@ function VolLastbar() {
     const fetchVolunteerRequestsByUserId = async () => {
         setLoading(true); // Set loading to true before fetching data
         try {
-          const response = await axios.post('http://localhost:3001/api/volunteers/volunteer-requestsByUser', {
+          const response = await axios.post('/api/volunteers/volunteer-requestsByUser', {
             userId: clarkId,
             isClosed: false,
           });

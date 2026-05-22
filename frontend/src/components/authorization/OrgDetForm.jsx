@@ -66,7 +66,7 @@ function OrgDetForm() {
     });
 
     try {
-      await axios.post("http://localhost:3001/api/organizations/", {
+      await axios.post("/api/organizations/", {
         orgID: OrgID,
         name: Name,
         description: Description,

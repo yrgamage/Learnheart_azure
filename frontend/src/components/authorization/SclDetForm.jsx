@@ -31,7 +31,7 @@ function SclDetForm() {
     });
 
     // Send data to the server
-    axios.post("http://localhost:3001/api/schools/", {
+    axios.post("/api/schools/", {
       userID: UserID,
       schoolName: Name,
       contact: PhoneNumber,

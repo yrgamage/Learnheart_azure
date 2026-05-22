@@ -22,7 +22,7 @@ export const SchoolProfile = () => {
   useEffect(() => {
     const fetchSchoolProfiles = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/api/schools/");
+        const response = await axios.get("/api/schools/");
         setSchoolProfiles(response.data); // Set all schools
       } catch (error) {
         console.error("Error fetching data:", error);

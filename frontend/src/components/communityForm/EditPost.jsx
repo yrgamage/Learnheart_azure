@@ -35,7 +35,7 @@ const EditPost = () => {
 
   const singlePostById = async () => {
     try {
-      const { data } = await axios.get(`http://localhost:3001/api/post/${id}`);
+      const { data } = await axios.get(`/api/post/${id}`);
       setTitle(data.post.title);
       setContent(data.post.content);
       setImagePreview(data.post.image.url);
@@ -50,7 +50,7 @@ const EditPost = () => {
 
   const updatePost = async (values) => {
     try {
-      const { data } = await axios.put(`http://localhost:3001/api/posts/update/post/${id}`, values);
+      const { data } = await axios.put(`/api/posts/update/post/${id}`, values);
       if (data.success) {
         toast.success("Post updated successfully");
         navigate("/posts");
@@ -62,7 +62,7 @@ const EditPost = () => {
 
   const deletePost = async () => {
     try {
-      const { data } = await axios.delete(`http://localhost:3001/api/posts/delete/post/${id}`);
+      const { data } = await axios.delete(`/api/posts/delete/post/${id}`);
       if (data.success) {
         toast.success("Post deleted successfully");
         navigate("/posts");

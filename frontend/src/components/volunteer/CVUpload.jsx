@@ -63,13 +63,13 @@ const CVUpload = () => {
     if (!userId || skills.length === 0) return;
 
     try {
-      const userResponse = await axios.get(`http://localhost:3001/api/volunteers?userID=${userId}`);
+      const userResponse = await axios.get(`/api/volunteers?userID=${userId}`);
 
       if (userResponse.data && userResponse.data.length > 0) {
         const volunteerId = userResponse.data[0]._id;
 
         const updateResponse = await axios.put(
-          `http://localhost:3001/api/volunteers/${volunteerId}`,
+          `/api/volunteers/${volunteerId}`,
           { skills },
           { headers: { "Content-Type": "application/json" } }
         );

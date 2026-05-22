@@ -20,7 +20,7 @@ function VolProfilebar() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("http://localhost:3001/api/volunteers");
+                const response = await axios.get("/api/volunteers");
                 setVolunteers(response.data);
             } catch (error) {
                 console.error("Error fetching data:", error);
@@ -32,7 +32,7 @@ function VolProfilebar() {
     useEffect(() => {
         const fetchOrganizations = async () => {
             try {
-                const response = await axios.get(`http://localhost:3001/api/volunteers/accepted-organizations/${user?.id}`);
+                const response = await axios.get(`/api/volunteers/accepted-organizations/${user?.id}`);
                 setOrganizations(response.data);
             } catch (error) {
                 console.error("Error fetching organizations:", error);

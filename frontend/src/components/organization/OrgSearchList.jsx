@@ -18,13 +18,13 @@ export default function OrgSearchList() {
       try {
         const response = await axios.get(apiUrl);
         switch (apiUrl) {
-          case "http://localhost:3001/api/organizations":
+          case "/api/organizations":
             setOrganizations(response.data);
             break;
-          case "http://localhost:3001/api/volunteers":
+          case "/api/volunteers":
             setAllVolunteers(response.data);
             break;
-          case "http://localhost:3001/api/seminars":
+          case "/api/seminars":
             setAllSeminars(response.data);
             break;
           default:
@@ -38,10 +38,10 @@ export default function OrgSearchList() {
     };
 
     fetchData(
-      "http://localhost:3001/api/organizations"
+      "/api/organizations"
     );
-    fetchData("http://localhost:3001/api/volunteers");
-    fetchData("http://localhost:3001/api/seminars");
+    fetchData("/api/volunteers");
+    fetchData("/api/seminars");
   }, []);
 
   const handleSearchChange = (event) => {

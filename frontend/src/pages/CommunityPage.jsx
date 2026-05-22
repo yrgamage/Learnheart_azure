@@ -20,7 +20,7 @@ const CommunityPage = () => {
   const showPosts = async () => {
     setLoading(true);
     try {
-      const { data } = await axios.get("http://localhost:3001/api/posts/posts/show");
+      const { data } = await axios.get("/api/posts/posts/show");
       setPosts(data.posts ?? []);
     } catch (error) {
       console.error(error.response?.data?.error || "Error fetching posts");

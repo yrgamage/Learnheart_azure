@@ -8,7 +8,7 @@ const RequestCard = ({ request, refreshRequests }) => {
 
     const handleCloseRequest = async () => {
         try {
-          const response = await fetch("http://localhost:3001/api/volunteers/close", {
+          const response = await fetch("/api/volunteers/close", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

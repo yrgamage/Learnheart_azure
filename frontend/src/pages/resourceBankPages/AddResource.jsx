@@ -68,7 +68,7 @@ const AddResource = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:3001/api/resources", {
+      const response = await fetch("/api/resources", {
         method: "POST",
         body: formData,
       });

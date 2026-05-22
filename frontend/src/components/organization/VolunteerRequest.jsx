@@ -15,7 +15,7 @@ const VolunteerRequest = ({ clarkUser }) => {
   const fetchVolunteerRequests = async () => {
     setLoading(true); // Set loading to true before fetching data
     try {
-      const response = await axios.post('http://localhost:3001/api/volunteers/volunteer-requests', {
+      const response = await axios.post('/api/volunteers/volunteer-requests', {
         isPending: true,
         organizationId: clarkUser?._id,
       });

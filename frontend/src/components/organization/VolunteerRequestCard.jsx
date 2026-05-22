@@ -19,7 +19,7 @@ const VolunteerRequestCard = ({ request, refreshRequests }) => {
 
   const handleAccept = async () => {
     try {
-      const response = await fetch("http://localhost:3001/api/volunteers/accept", {
+      const response = await fetch("/api/volunteers/accept", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -43,7 +43,7 @@ const VolunteerRequestCard = ({ request, refreshRequests }) => {
 
   const handleReject = async () => {
     try {
-      const response = await fetch("http://localhost:3001/api/volunteers/reject", {
+      const response = await fetch("/api/volunteers/reject", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

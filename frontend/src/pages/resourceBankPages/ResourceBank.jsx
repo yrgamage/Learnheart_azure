@@ -39,7 +39,7 @@ const ResourceBank = () => {
   const fetchNotes = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3001/api/resources/notes/withPaginate",
+        "/api/resources/notes/withPaginate",
         { subject: subject.toLowerCase(), grade, page: notesPage, limit: 3, sort: "title", order: "asc" }
       );
       setNotes(response.data.data || []);
@@ -52,7 +52,7 @@ const ResourceBank = () => {
   const fetchVideos = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3001/api/resources/videos/withPaginate",
+        "/api/resources/videos/withPaginate",
         { subject: subject.toLowerCase(), grade, page: videosPage, limit: 3, sort: "title", order: "asc" }
       );
       setVideos(response.data.data || []);

@@ -70,7 +70,7 @@ export const RequestSession = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3001/api/seminars/",
+        "/api/seminars/",
         {
           name: clarkId?.name,
           description: `${formData.subject} for grade ${formData.grade} students` + (formData.medium ? ` in ${formData.medium}.` : ""),
@@ -114,7 +114,7 @@ export const RequestSession = () => {
   useEffect(() => {
     const fetchSchools = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/api/schools");
+        const response = await axios.get("/api/schools");
         setSchools(response.data);
       } catch (error) {
         console.log("Error:", error);
@@ -123,7 +123,7 @@ export const RequestSession = () => {
 
     const fetchOrganizations = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/api/organizations");
+        const response = await axios.get("/api/organizations");
         setOrganizations(response.data);
       } catch (error) {
         console.log("Error fetching organizations:", error);

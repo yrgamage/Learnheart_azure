@@ -44,7 +44,7 @@ function VolDetForm() {
   function submitForm() {
     console.log("submit");
     Navigate("/volunteer/overview");
-    axios.post("http://localhost:3001/api/volunteers/", {
+    axios.post("/api/volunteers/", {
       "userID": UserID,
       "name": Name,
       "description": Description,

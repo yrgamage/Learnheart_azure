@@ -33,7 +33,7 @@ const CreatePost = () => {
     validationSchema,
     onSubmit: async (values, actions) => {
       try {
-        await axios.post("http://localhost:3001/api/posts/post/create", values);
+        await axios.post("/api/posts/post/create", values);
         toast.success("Post created successfully!");
         navigate("/posts");
         actions.resetForm();

@@ -23,7 +23,7 @@ const SinglePost = () => {
   const displaySinglePost = async () => {
     setLoading(true);
     try {
-      const { data } = await axios.get(`http://localhost:3001/api/posts/post/${id}`);
+      const { data } = await axios.get(`/api/posts/post/${id}`);
       setTitle(data.post.title);
       setContent(data.post.content);
       setImage(data.post.image);

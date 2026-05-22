@@ -21,7 +21,7 @@ function VolMidbar() {
   const fileInputRef = useRef(null);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/api/organizations")
+    axios.get("/api/organizations")
       .then(response => setOrganizations(response.data))
       .catch(error => console.error("Error fetching organizations:", error));
   }, []);
@@ -88,7 +88,7 @@ function VolMidbar() {
     console.log("Submitting form data:", formDataToSend);
 
     try {
-      const response = await axios.post("http://localhost:3001/api/volunteers/request", formDataToSend, {
+      const response = await axios.post("/api/volunteers/request", formDataToSend, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
