@@ -10,7 +10,12 @@ import requests
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+
+FRONTEND_URL = os.getenv("FRONTEND_URL", "").strip()
+BACKEND_URL = os.getenv("BACKEND_URL", "").strip()
+ALLOWED_ORIGINS = [origin for origin in {FRONTEND_URL, BACKEND_URL} if origin]
+
+CORS(app, origins=ALLOWED_ORIGINS or "*")
 
 UPLOAD_FOLDER = 'uploads'
 ALLOWED_EXTENSIONS = {'pdf', 'doc', 'docx'}
@@ -111,4 +116,5 @@ def upload_file():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.getenv("PORT", "5000"))
+    app.run(host="0.0.0.0", port=port, debug=False)
