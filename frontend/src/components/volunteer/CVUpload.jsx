@@ -40,7 +40,7 @@ const CVUpload = () => {
 
     // Local API = http://127.0.0.1:5000/upload
     try {
-      const response = await axios.post("https://learnheart-skill-server.onrender.com/upload", formData, {
+      const response = await axios.post("http://20.255.63.245/cv/upload", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

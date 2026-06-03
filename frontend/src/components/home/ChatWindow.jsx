@@ -20,7 +20,7 @@ const ChatWindow = () => {
     // Local API = http://127.0.0.1:5000/
     
     try {
-      const response = await axios.post("https://learnheart-chatbot-server.onrender.com/chat", { question: input });
+      const response = await axios.post("http://20.255.63.245/chatbot/chat", { question: input });
       if (response.data.learn) {
         setMessages((prev) => [...prev, { sender: "Bot", text: "I don't know. Can you teach me?" }]);
         setTeachMode(true);
@@ -40,7 +40,7 @@ const ChatWindow = () => {
       const question = messages[messages.length - 2].text;
   
       try {
-        await axios.post("https://learnheart-chatbot-server.onrender.com/learn", {
+        await axios.post("http://20.255.63.245/chatbot/learn", {
           question: question,
           answer: teachAnswer,
         });
